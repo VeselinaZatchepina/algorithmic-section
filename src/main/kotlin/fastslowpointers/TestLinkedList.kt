@@ -30,3 +30,14 @@ fun getLinkedListWithCycle(): ListNode {
 
     return node1
 }
+
+fun printLinkedList(head: ListNode?) {
+    var current: ListNode? = head
+
+    while (current != null) {
+        print("${current.value} -> ")
+        current = current.next
+    }
+
+    println()
+}
